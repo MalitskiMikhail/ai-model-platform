@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #0f0f0f;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    border-bottom: 1px solid #333;
+}
+
+.gallery-grid {
+    display: flex;
+    flex-wrap: wrap; /* Чтобы фото переносились на новую строку */
+    gap: 15px;
+    justify-content: center;
+    padding: 40px 5%;
+}
+
+.photo-card {
+    position: relative;
+    width: 250px;
+    height: 350px;
+    background: #222;
+    border-radius: 15px;
+    overflow: hidden;
+    filter: blur(4px); /* Эффект закрытого контента */
+    transition: 0.3s;
+}
+
+.btn-subscribe {
+    background: linear-gradient(45deg, #ff0050, #ff5000);
+    color: white;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto;
+}
