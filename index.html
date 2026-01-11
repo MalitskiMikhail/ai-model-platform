@@ -3,42 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Model - Exclusive Content</title>
+    <title>Clara | Private Community</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
 <header class="navbar">
-    <div class="logo">LUX-AI</div>
+    <div class="logo">CLARA</div>
     <nav class="menu">
         <a href="#gallery">Gallery</a>
         <a href="#about">About Me</a>
     </nav>
-    <button class="btn-login">Login</button>
+    <button class="btn-login" onclick="alert('Login feature coming soon!')">Login</button>
 </header>
 
-<main class="hero">
-    <h1>Exclusive Content from Maya</h1>
-    <p>Subscribe to unlock 500+ private photos and videos.</p>
+<section class="hero">
+    <div class="hero-content">
+        <h1>My Private Space</h1>
+        <p>Unfiltered moments, travel diaries, and exclusive content I don't share anywhere else.</p>
+        <a href="#pricing" class="btn-primary">Join the Community</a>
+    </div>
+</section>
 
-    <div class="gallery-grid" id="gallery">
-        <div class="photo-card locked">
-            <img src="https://via.placeholder.com/300x400" alt="Private">
-            <div class="overlay">🔒 Unlock</div>
+<section id="gallery" class="gallery-section">
+    <h2 class="section-title">Latest Updates</h2>
+    <div class="gallery-grid">
+        <div class="photo-card">
+            <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&q=80&w=400" alt="Daily Vibe">
+            <div class="status-tag">Free</div>
         </div>
+
         <div class="photo-card locked">
-            <img src="https://via.placeholder.com/300x400" alt="Private">
-            <div class="overlay">🔒 Unlock</div>
+            <div class="lock-overlay">
+                <span>🔒 Members Only</span>
+            </div>
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=10&w=400" alt="Private Content">
         </div>
+
         <div class="photo-card locked">
-            <img src="https://via.placeholder.com/300x400" alt="Private">
-            <div class="overlay">🔒 Unlock</div>
+            <div class="lock-overlay">
+                <span>🔒 Members Only</span>
+            </div>
+            <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&q=10&w=400" alt="Private Content">
+        </div>
+
+        <div class="photo-card locked">
+            <div class="lock-overlay">
+                <span>🔒 Members Only</span>
+            </div>
+            <img src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&q=10&w=400" alt="Private Content">
         </div>
     </div>
+</section>
 
-    <div class="pricing">
-        <button class="btn-subscribe">Get Full Access - $19/mo</button>
+<section id="pricing" class="pricing-section">
+    <div class="pricing-card">
+        <h3>Full Access Membership</h3>
+        <div class="price">$19<span>/mo</span></div>
+        <ul class="benefits">
+            <li>✨ Unlock 500+ private photos</li>
+            <li>📹 HD video archives</li>
+            <li>💬 Direct DM access</li>
+            <li>🔥 Daily new updates</li>
+        </ul>
+        <button class="btn-subscribe">Get Full Access Now</button>
+        <p class="secure-text">🔒 Secure payment via Stripe / PayPal</p>
     </div>
-</main>
+</section>
+
+<footer class="footer">
+    <p>&copy; 2026 Clara's Private Club. All rights reserved.</p>
+    <div class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+    </div>
+</footer>
+
 <script src="script.js"></script>
 </body>
 </html>
